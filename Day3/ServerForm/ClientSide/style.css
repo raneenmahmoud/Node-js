@@ -1,0 +1,93 @@
+@import url(https://fonts./googleapis.com/css?family=Cookie|Raleway:300,700,400);
+body{
+    box-sizing: border-box;
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+.login_Box{  
+    background: rgba(0, 0, 0, 0.5);
+    color:#fff;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 1em 0 rgba(51, 51, 51, 0.25);
+    z-index: -1;
+    border-radius:8px ;
+}
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: -50px;
+    left: calc(50% - 50px);
+    position: absolute;
+}
+h1{
+    font-size: 3em;
+	margin: 0 0 0.5em ;
+	text-align: center;
+	font-family: 'Cookie', cursive;
+}
+.login_Box label{
+    margin: 0;
+    padding: 0 0 10px;
+    font-weight: bold;
+    font-size: 18px
+}
+.login_Box input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.login_Box input[type="text"],input[type="password"]{
+    height: 30px;
+    border-bottom: 1px solid #fff;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+    outline: none;
+    background: transparent;
+    color:#fff;
+    font-size: 18px;
+}
+.login_Box input[type="submit"]{
+    height: 40px;
+    width: 30%;
+    border: none;
+    outline: none;
+    border-radius:6px ;
+    background: #2889cf;
+    color:#fff;
+    font-size: 18px;
+    position: absolute;
+    align-items: center;
+}
+.sumbit_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.error { color: #ea8d47;
+font-size: 1.5vw;}
+@media(max-width:400px){
+    .login_Box{
+        width: 60%;}
+    }
+@media(max-width: 400.1px) and (min-width: 500px) {
+    .login_Box{
+        width:35%;}
+    }
+@media(min-width:500.1px){
+        .login_Box{
+            width: 25%;}
+        }  
+/* .login_Box input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(153, 153, 153);
+} */

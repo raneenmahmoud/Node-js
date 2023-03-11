@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+    <link href="style.css" type="text/css" rel="stylesheet"  >
+    <link href="./assests/favicon.ico" rel="icon" type="image/x-icon">
+</head>
+<body id="body">
+        <div class="login_Box">
+            <img src="./assests/icon.png" class="avatar" alt="avatar img">
+            <h1>Login Form</h1>
+            <form id="FormID" name="contactForm" action="welcome.html" method="post" onsubmit="return ValidateForm()">
+                <label>Username</label>
+                <input type="text" name="name" id="name" autocomplete="off"  />
+                <div class="error" id="nameErr"></div>
+                <label>Email</label>
+                <input type="text" name="email" id="email" autocomplete="off"  />
+                <div class="error" id="emailErr"></div>
+                <label>Phone</label>
+                <input type="text" name="phone" id="phone" autocomplete="off"/>
+                <div class="error" id="mobileErr"></div>
+                <label>Address</label>
+                <input type="text" name="address" id="address" autocomplete="off" />
+                <div class="error" id="addressErr"></div>
+                <br><br>
+                <div class="sumbit_container">
+                <input type="submit" value="Login" id="submmit" onmouseover="changeBackground(this.id, '#c0c0c0', 'black');"
+                   onmouseout="changeBackground(this.id, '#2889cf', 'white');"/>
+                </div>
+            </form>
+        </div>
+    <script src="form.js"> </script>
+</body>
+</html>
